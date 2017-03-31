@@ -12,7 +12,7 @@
 			<div class='row_inner col-xs-6'>".$row["name"].
 			"&nbsp &nbsp RM".$row["price"]."<br>".$row["description"]."</div>
 			<div class='row_inner col-xs-3'>
-			<button class='btn btn-success'>Add</button>
+			<button class='btn btn-success' id='".$row["name"]."'>Add</button>
 			</div></div>";
 		}
 	}

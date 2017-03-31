@@ -16,6 +16,9 @@
 	min-height: 2em;
 	border-radius: 10px;
 }
+#submit-btn{
+  float: right;
+}
 
 
 </style>
@@ -24,18 +27,22 @@
 <header>
 <nav class="navbar navbar-inverse">
 	<div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">Tap Order</a>
+    </div>
 		<ul class="nav navbar-nav">
-      	<li><a href="#">Tap Order</a></li>
-    	</ul>
+        <li><a href="#"> <?php echo "Table Number: ".$_GET['table']; ?> </a></li>
+    </ul>
 	</div>
 </nav>
 </header>
-   
+
 <content>
 <!--Modal starts here -->
 <div class="modal_box">
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#foodModal">Add Food</button>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#drinksModal">Add Drinks</button>
+<button type="button" class="btn btn-success" id="submit-btn">Submit Order</button>
 
 <!-- Modal -->
 <div id="foodModal" class="modal fade" role="dialog">
@@ -57,11 +64,15 @@
   </div>
 </div>
 <!--Modal ends here -->
+
+<!-- Content for selected food goes here -->
 </div>
+<hr>
 </content>
-   
-<footer>
-   	
-</footer>
+
 </body>
+
+<script>
+  
+</script>
 </html>
