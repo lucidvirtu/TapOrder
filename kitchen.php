@@ -26,9 +26,9 @@
 </header>
 <content>
 <div class="container">
-	<h2>Table Bill</h2>
+	<h2>Kitchen Order Ticket</h2>
 	<?php
-	include 'counter_script.php';
+	include 'kitchen_script.php';
 	?>
 
 </div>
